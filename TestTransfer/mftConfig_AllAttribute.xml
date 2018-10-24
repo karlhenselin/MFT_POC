@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MftConfigPlan xmlns="http://xmlns.oracle.com/mft/configPlan/v1">
+	<global>
+	<!--Add global search and replace rules. Example :
+	<searchReplace>
+		<search>http://my-test-server</search>
+		<replace>http://my-server</replace>
+	</searchReplace>-->
+	</global>
+	<!--Add source level search and replace rules. Example :
+	<sourcePattern namePattern="*">
+		<searchReplace>
+			<search>http://my-test-server</search>
+			<replace>http://my-server</replace>
+		</searchReplace>
+	</sourcePattern>-->
+	<!--Add target level search and replace rules. Example :
+	<targetPattern namePattern="*">
+		<searchReplace>
+			<search>http://my-test-server</search>
+			<replace>http://my-server</replace>
+		</searchReplace>
+	</targetPattern>-->
+	<!--add search and replace rules for the artifact properties-->
+	<sources>
+		<source name="Test_Source">
+			<binding technologyBinding="FTP Remote">
+				<attribute name="Host Name">
+					<replace>ngftp2.ressurs.norgesgruppen.no</replace>
+				</attribute>
+				<attribute name="Control Port">
+					<replace>21</replace>
+				</attribute>
+				<attribute name="Content Folder">
+					<replace>/caps/mft_test/Test_Source</replace>
+				</attribute>
+				<attribute name="Password">
+					<replace>pw_key_7a9ea824-0c8c-433b-8921-2a2ec966558f</replace>
+				</attribute>
+				<attribute name="User Name">
+					<replace>caps</replace>
+				</attribute>
+			</binding>
+		</source>
+	</sources>
+	<targets>
+		<target name="Test_TargetLocalFolder">
+			<binding technologyBinding="FTP Remote">
+				<attribute name="Host Name">
+					<replace>ngftp2.ressurs.norgesgruppen.no</replace>
+				</attribute>
+				<attribute name="Control Port">
+					<replace>21</replace>
+				</attribute>
+				<attribute name="Content Folder">
+					<replace>mft_test/Test_Target</replace>
+				</attribute>
+				<attribute name="Password">
+					<replace>pw_key_19fbec47-1bbc-41b7-b8fb-dd5a41e7403a</replace>
+				</attribute>
+				<attribute name="User Name">
+					<replace>caps</replace>
+				</attribute>
+			</binding>
+		</target>
+	</targets>
+	<transfers>
+	</transfers>
+	<include>
+		<transferName>Test_Transfer</transferName>
+	</include>
+</MftConfigPlan>

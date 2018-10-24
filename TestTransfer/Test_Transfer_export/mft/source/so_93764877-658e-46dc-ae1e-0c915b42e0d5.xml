@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Source createdBy="junebo" id="so_93764877-658e-46dc-ae1e-0c915b42e0d5" lastModifiedBy="erskip" listening="true" name="Test_Source" xmlns="http://xmlns.oracle.com/mft/source">
+   <SourceType>
+      <SourceTargetCategory xmlns="http://xmlns.oracle.com/mft/category">
+         <Technology>
+            <TechnologyBinding secure="false" type="FTP" xmlns="http://xmlns.oracle.com/mft/binding">
+               <FTP changeDirectory="false" connectionMode="passive" controlPort="21" defaultDateFormat="MM-dd-yyyy HH:mma" enforceFileTypeFromSpec="false" eventBased="false" eventSecurityEnabled="false" fileType="binary" folder="/caps/mft_test/Test_Source" ftpAbsolutePathBegin="/" ftpClientClass="default" host="ngftp2.ressurs.norgesgruppen.no" ignoreFilesWithoutTimeFormat="false" isTransacted="false" minimumAge="0" password="pw_key_7a9ea824-0c8c-433b-8921-2a2ec966558f" pollingBased="true" pollingFrequency="20" recentDateFormat="MM-dd-yyyy HH:mma" useNlst="false" user="caps">
+                  <FTPCommon includeExcludePatternType="file" includeFiles="evry*.pdf" listParserKey="WIN"/>
+                  <ActionCommon physicalTargetDirectory="/caps/mft_test/Source_E2b/archive" type="archiveAndDelete"/>
+                  <PerformanceAttributes maxRaiseSize="600" singleThreadModel="true" threadCount="10"/>
+               </FTP>
+            </TechnologyBinding>
+         </Technology>
+      </SourceTargetCategory>
+   </SourceType>
+</Source>

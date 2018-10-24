@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Target createdBy="junebo" id="tgt_7f99172d-a27e-498d-a420-4cd0fa97bdb2" name="Test_TargetLocalFolder" propagateSourceSubFolders="false" responseMode="Async" xmlns="http://xmlns.oracle.com/mft/target">
+   <TargetType>
+      <SourceTargetCategory xmlns="http://xmlns.oracle.com/mft/category">
+         <Technology>
+            <TechnologyBinding secure="false" type="FTP" xmlns="http://xmlns.oracle.com/mft/binding">
+               <FTP changeDirectory="false" connectionMode="passive" controlPort="21" defaultDateFormat="MM-dd-yyyy HH:mma" enforceFileTypeFromSpec="false" eventBased="false" eventSecurityEnabled="false" fileType="binary" folder="mft_test/Test_Target" ftpAbsolutePathBegin="/" ftpClientClass="default" host="ngftp2.ressurs.norgesgruppen.no" ignoreFilesWithoutTimeFormat="false" isTransacted="false" minimumAge="0" password="pw_key_19fbec47-1bbc-41b7-b8fb-dd5a41e7403a" pollingBased="true" pollingFrequency="60" recentDateFormat="MM-dd-yyyy HH:mma" useNlst="false" user="caps">
+                  <FTPCommon listParserKey="WIN"/>
+                  <PerformanceAttributes/>
+               </FTP>
+            </TechnologyBinding>
+         </Technology>
+      </SourceTargetCategory>
+   </TargetType>
+</Target>

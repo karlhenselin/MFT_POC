@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Transfer createdBy="junebo" id="xfer_eae8b8f9-d9a0-47f6-9901-475bdf92aa6d" lastModifiedBy="erskip" name="Test_Transfer" priority="medium" xmlns="http://xmlns.oracle.com/mft/transfer">
+   <Source>
+      <SourceRef id="soRef_99a2bdb3-f57d-4f72-a67f-109c15a950a2" sourceRef="/mft/source/so_93764877-658e-46dc-ae1e-0c915b42e0d5.xml#so_93764877-658e-46dc-ae1e-0c915b42e0d5"/>
+   </Source>
+   <ContentFilters>
+      <ContentFilter order="1">
+         <ContentTypeIdentifier name="Test_Transfer_cf_1" patternType="file">
+            <pattern>evry*</pattern>
+         </ContentTypeIdentifier>
+      </ContentFilter>
+   </ContentFilters>
+   <Targets>
+      <Target id="xfer_tgt_94f4f899-cfed-40c3-9e2f-a526df5087da">
+         <TargetRef id="tgtRef_c6a59bc8-8992-4696-ab61-467f12198ba8" targetRef="/mft/target/tgt_7f99172d-a27e-498d-a420-4cd0fa97bdb2.xml#tgt_7f99172d-a27e-498d-a420-4cd0fa97bdb2"/>
+      </Target>
+   </Targets>
+</Transfer>
