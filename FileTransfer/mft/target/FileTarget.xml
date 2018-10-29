@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Target createdBy="weblogic" id="tgt_089b7343-d048-4343-85ff-f01922902960" lastModifiedBy="weblogic" name="FileTarget" propagateSourceSubFolders="false" responseMode="Async" xmlns="http://xmlns.oracle.com/mft/target">
+<Target createdBy="weblogic" id="tgt_089b7343-d048-4343-85ff-f01922902960" lastModifiedBy="weblogic" name="FileTarget" responseMode="Async" xmlns="http://xmlns.oracle.com/mft/target">
    <TargetType>
       <SourceTargetCategory xmlns="http://xmlns.oracle.com/mft/category">
          <Technology>
